@@ -23,7 +23,7 @@ jobs:
         cache: 'yarn'
   
     - run: yarn install --frozen-lockfile
-    - run: vite build --base=/${{ github.event.repository.name }}
+    - run: yarn build --base=/${{ github.event.repository.name }}
     - run: | 
         git config user.name github-actions
         git config user.email github-actions@github.com
