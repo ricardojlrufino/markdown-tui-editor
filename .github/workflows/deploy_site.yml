@@ -24,7 +24,7 @@ jobs:
     - run: | 
         git config user.name github-actions
         git config user.email github-actions@github.com
-        echo ".nojekyll" > dist/.nojekyll
+        touch dist/.nojekyll
         git --work-tree dist add --all
         git commit -m "Automatic Deploy action run by github-actions"
     - run: git push origin HEAD:gh-pages --force
