@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/markdown-tui-editor/sw.js', { scope: '/markdown-tui-editor/' })})}
