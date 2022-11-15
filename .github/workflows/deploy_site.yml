@@ -40,4 +40,4 @@ jobs:
         destination-repository-name: '${{ github.event.repository.name }}'
         user-email: ricardo.jl.rufino@gmail.com
         commit-message: See ORIGIN_COMMIT from $GITHUB_REF
-        target-branch: master
+        target-branch: main
